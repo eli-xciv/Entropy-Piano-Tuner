@@ -11,6 +11,7 @@
 # generated files
 config.tests/*/Makefile
 .qmake.stash
+.idea
 
 # user files
 *.user
