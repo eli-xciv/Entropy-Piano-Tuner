@@ -13,6 +13,9 @@ toolbox create ept
 
 toolbox enter ept
 
+# Clone Repo
+git clone --recursive git@github.com:eli-xciv/Entropy-Piano-Tuner.git
+
 # Apply Patch
 patch -N1 -i qwt.patch
 
