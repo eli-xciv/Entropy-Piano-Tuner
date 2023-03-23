@@ -47,6 +47,14 @@ make
 cd ..
 qmake-qt5
 make
+
+
+# link the shared object
+cd bin/
+ln -s libfftw3.so libfftw3.so.1
+
+# run EPT
+./bin/entropypianotuner
 ```
 
 ## Original README
