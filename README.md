@@ -4,9 +4,14 @@
 For general information about the software have a look at the [homepage](http://piano-tuner.org/) of the project.
 
 ## Building
-
-```
+*These instructions are for buidling on Fedora 37*
+```bash
 # Build EPT
+sudo dnf install toolbox
+
+toolbox create ept
+
+toolbox enter ept
 
 # Apply Patch
 patch -N1 -i qwt.patch
