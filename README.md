@@ -16,8 +16,10 @@ toolbox enter ept
 # Clone Repo
 git clone --recursive git@github.com:eli-xciv/Entropy-Piano-Tuner.git
 
-# Apply Patch
-patch -N1 -i qwt.patch
+# Apply Patches
+patch -Np1 -i qwt.patch
+patch -Np1 -i qwt-patch2.patch
+
 
 # Install RPM deps
 sudo dnf install -y qt-dev qt-devel /usr/bin/qmake qt5-devel qt5-qtbase-devel qt5-qtbase qt5-qtbase-common qt5-qtbase-gui qt5-qtbase-static qt5-qtmultimedia-devel
